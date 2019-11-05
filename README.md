@@ -1,23 +1,41 @@
-# Adonis API application
+# Adonis URL Shortener
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Adonis.js application to shorten URLs with Node.js and SQLite
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+## Requirements
+
+- npm >= 3.0.0
+- Node.js >= 8.0.0
+- SQLite3
 
 ## Setup
 
-Use the adonis command to install the blueprint
+Install npm dependencies
 
 ```bash
-adonis new yardstick --api-only
+npm i
 ```
 
-or manually clone the repo and then run `npm install`.
+Install Adonis CLI to help with installation/migrations
 
+```bash
+npm i -g @adonisjs/cli
+```
+
+Create env file
+
+```bash
+mv .env.example .env
+# HOST, PORT, APP_NAME, and DB_DATABASE should be changed here as needed
+```
+
+### APP Key
+
+Run the following command to generate a new app key.
+
+```js
+adonis key:generate
+```
 
 ### Migrations
 
